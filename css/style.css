@@ -1,0 +1,324 @@
+.box {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/* -----------------Header--------------------- */
+.header {
+  background-color: lightgreen;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__btn {
+  margin-right: 20px;
+}
+
+.btn__login,
+.btn,
+.create-visit,
+.form__add,
+.cards__btn-edit,
+.cards__btn-more {
+  display: block;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(205, 179, 145);
+}
+
+.btn-push {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn__login:hover,
+.btn-push:hover {
+  background-color: rgb(194, 232, 232);
+}
+
+.main {
+  background-color: rgb(97, 140, 140);
+}
+
+/* -----------------Modal--------------------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content__login {
+  background-color: lightgreen;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.email__login,
+.password__login {
+  font-size: 15px;
+  padding: 10px 10px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+
+.close-modal,
+.form__close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus,
+.form__close-modal:hover,
+.form__close-modal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -----------------Filter--------------------- */
+.section__filter {
+  margin: 0 auto;
+}
+
+.filter {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0;
+  align-items: flex-end;
+}
+
+.filter__search {
+  width: 200px;
+  border: 1px solid #b6ccec;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.filter__status select,
+.filter__time select {
+  border: 1px solid #b6ccec;
+  color: #15152c;
+  padding: 7px;
+  border-radius: 15px;
+  width: 100%;
+  font-size: 17px;
+}
+
+.filter__status label,
+.filter__time label {
+  color: #313158;
+  font-size: 20px;
+}
+
+.filter__btn {
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* ---------------------Visit----------- */
+.visit__title,
+.form__content-tittle,
+.section__visit .modal {
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* ---------------------ModalForm----------- */
+
+.section__form {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #5da8a8;
+  border-radius: 10px;
+  background-color: #5da8a8;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.form__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  background-color: #5da8a8;
+  border: 1px solid #5da8a8;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.52);
+  margin: 30px auto 0;
+  padding: 20px;
+  position: relative;
+}
+
+.form__content-tittle {
+  padding: 10px;
+}
+
+.form__create-information {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*flex-wrap: wrap;*/
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 10px;
+  width: 100%;
+}
+
+.section__form label {
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  color: #1b465b;
+}
+
+.section__form .form-select,
+.section__form textarea,
+.section__form input,
+.section__form input textarea,
+.section__form .urgency-select {
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  border: 1px solid #b6ccec;
+  color: #1b465b;
+  border-radius: 15px;
+  padding: 15px 15px 15px 19px;
+  font-size: 20px;
+  outline: none;
+}
+
+.section__form input::placeholder,
+.section__form textarea::placeholder {
+  font-size: 17px;
+  color: #b6ccec;
+}
+
+.section__form input:focus {
+  background: #ffffff;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.21);
+}
+
+.form__add,
+.form__edit {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  color: #1b465b;
+}
+
+/* ---------------------ModalForm----------- */
+
+.visit__cards {
+  width: 95%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards__content {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  box-shadow: 0 8px 8px 0 rgb(0 0 0 / 21%);
+  background: #d6dfed;
+  border: 1px solid #d6dfed;
+  border-radius: 15px;
+}
+
+.cards__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 16px;
+  color: #1b465b;
+}
+
+.cards__information p {
+  font-size: 20px;
+  color: #1b465b;
+  font-weight: bold;
+}
+
+.cards__more-information {
+  width: 100%;
+  padding: 10px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  color: #1b465b;
+}
+
+.cards__btn {
+  display: flex;
+}
+
+.cards__btn-edit {
+  margin-right: 30px;
+}
+
+.list-group-item {
+  font-size: 20px;
+  color: #1b465b;
+}
+
+.list-group-item > span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #1b465b;
+}
+
+.d-none {
+  display: none;
+}
